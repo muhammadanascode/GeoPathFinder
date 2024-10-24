@@ -46,21 +46,27 @@ public class Graph {
     }
 
     public static void main(String[] args) {
-        Graph graph = new Graph(5); // Create a graph with a maximum of 5 vertices
+        Graph graph = new Graph(8); // Create a graph with a maximum of 5 vertices
 
         // Adding vertices with their coordinates
-        graph.addVertex(40.7128, -74.0060); // chemistry depart
-        graph.addVertex(34.0522, -118.2437); // Ubit
-        graph.addVertex(41.8781, -87.6298); // silver jubliee gate
-        graph.addVertex(29.7604, -95.3698); // pharmacy
-        graph.addVertex(39.7392, -104.9903); // mathematics
+        graph.addVertex(24.930897, 67.118166); // Silver jubliee gate
+        graph.addVertex(24.935883, 67.120274); // road intersection at criminology department
+        graph.addVertex(24.937434, 67.119073); // road intersection at dean faculty
+        graph.addVertex(24.939253, 67.118011); // road intersection at microbiology
+        graph.addVertex(24.940883, 67.117050); // road intersection at staff club
+        graph.addVertex(24.934653, 67.105672); // Maskan Gate
+        graph.addVertex(24.943258, 67.122034); // road intersection at point terminal
+        graph.addVertex(24.940422, 67.123675); // road intersection at geography department
 
         // Adding edges (source, destination, weight)
-        graph.addEdge(0, 1, 6);
-        graph.addEdge(0, 2, 5);
-        graph.addEdge(1, 2, 7);
-        graph.addEdge(2, 3, 10);
-        graph.addEdge(3, 4, 11);
+        graph.addEdge(0, 1, 5);
+        graph.addEdge(1, 2, 4);
+        graph.addEdge(2, 3, 3);
+        graph.addEdge(3, 4, 3);
+        graph.addEdge(4, 5, 8);
+        graph.addEdge(4, 6, 7);
+        graph.addEdge(6, 7, 4);
+        graph.addEdge(7, 3, 4);
 
         // Display the graph
         graph.displayGraph();
