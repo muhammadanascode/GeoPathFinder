@@ -50,7 +50,7 @@ class Djikstra {
     // Method to print the solution
     private static void printSolution(int sourceVertex, double[] distances, int[] parents) {
         int numberOfVertices = distances.length;
-        System.out.println("Vertex\t\tDistance\tPath");
+        System.out.println("Vertex\t\tDistance");
 
         for (int vertex = 0; vertex < numberOfVertices; vertex++) {
             if (vertex != sourceVertex) {
