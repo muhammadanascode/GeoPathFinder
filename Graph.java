@@ -82,8 +82,6 @@ public class Graph {
 
         Djikstra.dijkstra(graph.getAdjacencyMatrix(), 5);
 
-        // Display the graph
-        // graph.displayGraph();
     }
 
 }
