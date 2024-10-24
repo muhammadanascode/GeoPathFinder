@@ -18,6 +18,18 @@ public class Graph {
 
     }
 
+    public double[][] getAdjacencyMatrix() {
+        return adjacencyMatrix;
+    }
+
+    public int getNumberOfVertices() {
+        return numberOfVertices;
+    }
+
+    public Coordinate[] getVertices() {
+        return vertices;
+    }
+
     // Method to add a vertex
     public void addVertex(double latitude, double longitude) {
         vertices[numberOfVertices] = new Coordinate(latitude, longitude);
@@ -68,8 +80,10 @@ public class Graph {
         graph.addEdge(6, 7, 4);
         graph.addEdge(7, 3, 4);
 
+        Djikstra.dijkstra(graph.getAdjacencyMatrix(), 5);
+
         // Display the graph
-        graph.displayGraph();
+        // graph.displayGraph();
     }
 
 }
