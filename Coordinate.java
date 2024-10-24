@@ -1,8 +1,8 @@
-class Coordinnate {
+class Coordinate {
     double longitude;
     double latitude;
 
-    public Coordinnate(double longitude, double latitude) {
+    public Coordinate(double longitude, double latitude) {
         this.longitude = longitude;
         this.latitude = latitude;
     }
